@@ -57,6 +57,8 @@ font-family: 'Roboto', sans-serif;
 .card-blog .desc__title {
     font-size: 20px;
     margin-bottom: 75px;
+    color:black;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* CARD PRICING */
