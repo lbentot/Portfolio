@@ -28,7 +28,7 @@
 }
 
 /* BOUTON */
-.button {
+.primary-button {
     background: #000000;
     border-radius: 5px;
     padding: 20px 0;
@@ -37,6 +37,17 @@
     text-decoration: none;
     min-width: 200px;
     text-align: center;
+}
+
+.secondary-button {
+    border-radius: 5px;
+    padding: 20px 0;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    min-width: 200px;
+    text-align: center;
+    border: 1px solid black;
 }
 
 /* CARD BLOG */
