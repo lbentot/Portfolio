@@ -11,6 +11,8 @@
 .site-header .nav {
     display: flex;
     align-items: center;
+    color:black;
+    font-family: 'Roboto', sans-serif;
 }
 
 .site-header .nav li:not(:last-child) {
