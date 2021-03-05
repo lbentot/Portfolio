@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /* SITE HEADER */
 .site-header {
     display: flex;
@@ -52,4 +55,102 @@
 .card-blog .desc__title {
     font-size: 20px;
     margin-bottom: 75px;
+}
+
+/* CARD PRICING */
+
+.card-pricing {
+    background-color: #fff;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 24px;
+    margin-left: 24px;
+}
+.card-pricing .card_price_icon {
+    background-color: black;
+    position:relative; 
+    margin-bottom: 9px;   
+    width: 50px; height: 50px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.card-pricing .card_price_header {
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.card-pricing .card_price_header .card_price_title{
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-bottom: 4px;
+    text-align: center;
+    font-size: 20px;
+    /* identical to box height */
+
+}
+
+.card-pricing .card_price_header .card_price_subtitle {
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 66px;
+    /* identical to box height */
+
+}
+
+.card-pricing .card_price_desc {
+text-align: center;
+color:black;
+font-family: 'Roboto', sans-serif;
+margin-bottom: 65px;
+}
+
+
+.card-pricing .card_price_button {
+text-align: center;
+
+}
+
+
+/* CARD square */
+
+.card-square {
+}
+
+.card-square .card_square_img {
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.card-square .card_square_img img {
+    position: absolute;    
+    top: 0 ; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-square .card_square_desc {
+    margin-top: 34px;
+}
+
+
+.card-square .card_square_desc h2 {
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+
+.card-square .card_square_desc a {
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
 }

@@ -1,12 +1,18 @@
 ---
 layout: layouts/base.njk
+
 ---
 
 <div class='collections'>
   <h1 class='collections-title'>Collections</h1>
-  {% include "components/button.njk" %}
-  {% include "components/button.njk" %}
+{% import "components/button.njk" as button %}
+ 
+  {{ button.show('plop') }}
+  {{ button.show('see') }}
+
+
   <div class='flex'>
     {% include "components/card-blog.njk" %}
-  </div>
+    {% include "components/card-pricing.njk" %}
+    {% include "components/card-square.njk" %}  </div>
 </div>

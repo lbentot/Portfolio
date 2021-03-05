@@ -12,7 +12,9 @@ a {color: inherit;}
 .collections .flex {
   display: flex;
   padding: 40px 0;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-left:
 }
 .collections .flex .card-blog {
   width: 20%;
