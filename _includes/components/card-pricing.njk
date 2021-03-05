@@ -13,6 +13,7 @@
         </ul>
     </div>
     <div class='card_price_button'>
-      {{ button.show('Start Now') }}
+    {% import "components/primary-button.njk" as primary-button %}
+      {{ primary-button.show('Start Now') }}
     </div>
 </div>
