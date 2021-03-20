@@ -3,16 +3,74 @@ layout: layouts/base.njk
 
 ---
 
-<div class='collections'>
-  <h1 class='collections-title'>Collections</h1>
-{% import "components/primary-button.njk" as primary-button %}
- 
-  {{ primary-button.show('plop') }}
-  {{ primary-button.show('see more') }}
+{% import "components/primary-button.njk" as buttonPrimary %}
+{% import "components/secondary-button.njk" as buttonSecondary %}
+{% import "components/card-pricing.njk" as pricingCard %}
+{% import "components/hero-page.njk" as heroPage %}
 
+{{ heroPage.show('Learn more') }}
 
-  <div class='flex'>
-    {% include "components/card-blog.njk" %}
-    {% include "components/card-pricing.njk" %}
-    {% include "components/card-square.njk" %}  </div>
-</div>
+<section class="social-proof">
+  <div class="socialProof__txt_pres">
+    <h2 class="socialProof_titre">Trusted by the World’s Best Companies</h1>
+  </div>
+  <div class='flex socialProof_picture'>
+    <img scr"" class="socialProof_img">
+    <img scr"" class="socialProof_img">
+    <img scr"" class="socialProof_img">
+    <img scr"" class="socialProof_img">
+    <img scr"" class="socialProof_img">
+    <img scr"" class="socialProof_img">
+  </div>
+</section>
+
+<section class="featureLeft">
+  <div class="featureLeft_leftColomn">
+    <div class="featureLeft_txt_pres">
+      <h2 class="featureLeft_titre">Your Best Value Proposition</h1>
+      <h3 class="featureLeft_subtitle"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+      {{ buttonSecondary.show('Learn more') }}
+    </div>
+  </div>
+
+  <div class="featureLeft_rightColomn">
+    <img class="featureLeft_img" src="...">
+  </div>
+</section>
+
+<section class="featureRight">
+
+  <div class="featureRight_leftColomn">
+    <img class="featureRight_img" src="...">
+  </div>
+
+  <div class="featureRight_rightColomn">
+    <div class="featureRight_txt_pres">
+      <h2 class="featureRight_titre">Your Best Value Proposition</h1>
+      <h3 class="featureRight_subtitle"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+      {{ buttonSecondary.show('Learn more') }}
+    </div>
+  </div>
+
+</section>
+
+<section class="CTA">
+  <div class="CTA_blockPres">
+    <h2 class="CTA_blockPres_titre">Your Best Value Proposition</h1>
+    <h3 class="CTA_blockPres_subtitle"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+    {{ buttonPrimary.show('Learn more') }}
+  </div>
+</section>
+
+<section class="pricingPlace">
+  <div class="pricingPlace_txt_pres">
+    <h2 class="pricingPlace_titre">Pricing</h1>
+    <h3 class="pricingPlace_subtitle">Decouvrez tout nos tarifs</h1>
+  </div>
+  <div class="flex">
+    {{ pricingCard.show("Gratuit","29,99","Votre écoute","Un audit","10 Projets") }}
+    {{ pricingCard.show("Gratuit","29,99","Votre écoute","Un audit","10 Projets") }}
+    {{ pricingCard.show("Gratuit","29,99","Votre écoute","Un audit","10 Projets") }}
+  </div>
+</section>
+
