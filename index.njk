@@ -6,9 +6,21 @@ layout: layouts/base.njk
 {% import "components/primary-button.njk" as buttonPrimary %}
 {% import "components/secondary-button.njk" as buttonSecondary %}
 {% import "components/card-pricing.njk" as pricingCard %}
-{% import "components/hero-page.njk" as heroPage %}
 
-{{ heroPage.show('Learn more') }}
+  <section class="hero-page twoColumn">
+    <div class="leftColomn">
+      <div class="hero-page_txt_pres">
+        <h1 class="hero-page_titre"> Your best value proposition </h1>
+        <h2 class="hero-page_subtitle"> Sous titre</h2>
+        
+        {{ buttonPrimary.show('Start free trial') }}
+      </div>
+    </div>
+    <div class="rightColomn">
+      <img class="hero_img" src="img/Browser.svg">
+    </div>
+  </section>
+
 
 <section class="social-proof">
   <div class="socialProof__txt_pres">
@@ -73,4 +85,3 @@ layout: layouts/base.njk
     {{ pricingCard.show("Gratuit","29,99","Votre écoute","Un audit","10 Projets") }}
   </div>
 </section>
-

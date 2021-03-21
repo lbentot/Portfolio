@@ -1,0 +1,24 @@
+{% macro show(titre, soustitre) %}
+     <div class="hero-page twoColumn">
+    <div class="leftColomn">
+      <div class="hero-page_txt_pres">
+        <h1 class="hero-page_titre"> {{ titre }}</h1>
+        <h2 class="hero-page_subtitle"> {{ soustitre }}</h2>
+        
+        {{ buttonPrimary.show('Start free trial') }}
+      </div>
+    </div>
+    <div class="rightColomn">
+      <img class="hero_img" src='img/Browser.svg'>
+    </div>
+  </div>
+{% endmacro %}
+
+<!--
+J'ai essayé d'importer ce composant dans le index.njk mais ca marche pas et je sais pas pourquoi.
+En haut de ce commentaire c'est le composant.
+En bas c'est le code que j'avais mis dans le index.njk
+
+{% import "components/hero.njk" as heroPage %}
+        {{ heroPage.show('Start free trial','titre') }}
+-->
