@@ -1,0 +1,15 @@
+{% import "components/primary-button.njk" as buttonPrimary %}
+
+{% macro show(titre, presentation) %}
+
+  <div class="CTA_blockPres">
+    <h2 class="CTA_blockPres_titre">
+      {{ titre }}
+    </h2>
+    <h3 class="CTA_blockPres_subtitle">
+      {{ presentation }}
+    </h3>
+    {{ buttonPrimary.show('Learn more') }}
+  </div>
+
+{% endmacro %}

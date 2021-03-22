@@ -1,0 +1,18 @@
+{% import "components/secondary-button.njk" as buttonSecondary %}
+{% macro show(img, titre, soustitre) %}
+
+
+  <div class="featureRight_leftColomn">
+    <img class="featureRight_img" src="{{ img }}">
+  </div>
+
+  <div class="featureRight_rightColomn">
+    <div class="featureRight_txt_pres">
+      <h2 class="featureRight_titre">{{ titre }}</h1>
+      <h3 class="featureRight_subtitle"> {{ soustitre }} </h2>
+      {{ buttonSecondary.show('Learn more') }}
+    </div>
+  </div>
+
+{% endmacro %}
+

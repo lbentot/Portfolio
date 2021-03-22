@@ -6,76 +6,35 @@ layout: layouts/base.njk
 {% import "components/primary-button.njk" as buttonPrimary %}
 {% import "components/secondary-button.njk" as buttonSecondary %}
 {% import "components/card-pricing.njk" as pricingCard %}
-
 {% import "components/hero.njk" as heroPage %}
-{{ heroPage.show('Start free trial','titre') }}
+{% import "components/featureRight.njk" as featureRight %}
+{% import "components/featureLeft.njk" as featureLeft %}
+{% import "components/testimonial.njk" as testimonial %}
+{% import "components/CTA.njk" as cta %}
 
 
-  <section class="hero-page twoColumn">
-    <div class="leftColomn">
-      <div class="hero-page_txt_pres">
-        <h1 class="hero-page_titre"> Your best value proposition </h1>
-        <h2 class="hero-page_subtitle"> Sous titre</h2>
-        
-        {{ buttonPrimary.show('Start free trial') }}
-      </div>
-    </div>
-    <div class="rightColomn">
-      <img class="hero_img" src="img/Browser.svg">
-    </div>
-  </section>
-
+<section class="hero-page twoColumn">
+  {{ heroPage.show('Start free trial','titre') }}
+</section>
 
 <section class="social-proof">
-  <div class="socialProof__txt_pres">
-    <h2 class="socialProof_titre">Trusted by the World’s Best Companies</h1>
-  </div>
-  <div class='flex socialProof_picture'>
-    <img scr"" class="socialProof_img">
-    <img scr"" class="socialProof_img">
-    <img scr"" class="socialProof_img">
-    <img scr"" class="socialProof_img">
-    <img scr"" class="socialProof_img">
-    <img scr"" class="socialProof_img">
-  </div>
+{{ testimonial.show('Start free trial','titre','titre') }}
 </section>
 
 <section class="featureLeft">
-  <div class="featureLeft_leftColomn">
-    <div class="featureLeft_txt_pres">
-      <h2 class="featureLeft_titre">Your Best Value Proposition</h1>
-      <h3 class="featureLeft_subtitle"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
-      {{ buttonSecondary.show('Learn more') }}
-    </div>
-  </div>
-
-  <div class="featureLeft_rightColomn">
-    <img class="featureLeft_img" src="...">
-  </div>
+  {{ featureLeft.show('Start free trial','titre','titre') }}
 </section>
 
 <section class="featureRight">
 
-  <div class="featureRight_leftColomn">
-    <img class="featureRight_img" src="...">
-  </div>
-
-  <div class="featureRight_rightColomn">
-    <div class="featureRight_txt_pres">
-      <h2 class="featureRight_titre">Your Best Value Proposition</h1>
-      <h3 class="featureRight_subtitle"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
-      {{ buttonSecondary.show('Learn more') }}
-    </div>
-  </div>
+  {{ featureRight.show('Start free trial','titre','titre') }}
 
 </section>
 
 <section class="CTA">
-  <div class="CTA_blockPres">
-    <h2 class="CTA_blockPres_titre">Your Best Value Proposition</h1>
-    <h3 class="CTA_blockPres_subtitle"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
-    {{ buttonPrimary.show('Learn more') }}
-  </div>
+
+{{ cta.show('Start free trial','titre') }}
+
 </section>
 
 <section class="pricingPlace">
