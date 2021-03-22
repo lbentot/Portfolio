@@ -53,6 +53,10 @@
     font-size: 18px;
 }
 
+.primary-button:hover {
+    background-color: blue;
+}
+
 .secondary-button {
     border-radius: 5px;
     padding: 20px 0;
