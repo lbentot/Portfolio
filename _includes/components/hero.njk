@@ -1,16 +1,16 @@
 {% import "components/primary-button.njk" as buttonPrimary %}
-{% macro show(titre, soustitre) %}
+{% macro show(titre, soustitre, img) %}
      <div class="hero-page twoColumn">
     <div class="leftColomn">
       <div class="hero-page_txt_pres">
         <h1 class="hero-page_titre"> {{ titre }} </h1>
         <h2 class="hero-page_subtitle"> {{ soustitre }} </h2>
         
-        {{ buttonPrimary.show('Start free trial') }}
+        {{ buttonPrimary.show('Contactez-moi') }}
       </div>
     </div>
     <div class="rightColomn">
-      <img class="hero_img" src='img/Browser.svg'>
+      <img class="hero_img" src='{{ img }}'>
     </div>
   </div>
 {% endmacro %}

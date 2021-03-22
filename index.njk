@@ -14,37 +14,37 @@ layout: layouts/base.njk
 
 
 <section class="hero-page twoColumn">
-  {{ heroPage.show('Start free trial','titre') }}
+  {{ heroPage.show("Des astuces gratuites pour gagner de l'argent","Inscrivez-vous sur le site pour connaitre les dernière astuces pour gagner de l'argent","img/Save.svg") }}
 </section>
 
 <section class="social-proof">
-{{ testimonial.show('Start free trial','titre','titre') }}
+{{ testimonial.show('Ils ont confiances','dzd','img/Save.svg','https://www.fillmurray.com/300/360', 'https://www.fillmurray.com/300/360' ,'https://www.fillmurray.com/300/360') }}
 </section>
 
 <section class="featureLeft">
-  {{ featureLeft.show('Start free trial','titre','titre') }}
+  {{ featureLeft.show('Vous voulez en savoir plus ?',"C'est la nouvelle vie de ceux qui ont confiances en nous, ils sont heureux et RICHE",'img/Newlife.jpg') }}
 </section>
 
 <section class="featureRight">
 
-  {{ featureRight.show('Start free trial','titre','titre') }}
+  {{ featureRight.show('img/Solution.jpg','Je pense que la question est vite répondue','Je vais vous presenter la nouvelle méthode proposer par des chercheurs du MIT') }}
 
 </section>
 
 <section class="CTA">
 
-{{ cta.show('Start free trial','titre') }}
+{{ cta.show('Contactez nous',"Comme vous allez le voir sur le site, vous allez voir que c'est facile de gagner de l'argent. C'est pour ca, que l'on vous invite à vous inscrire dans notre newsletter." ) }}
 
 </section>
 
 <section class="pricingPlace">
   <div class="pricingPlace_txt_pres">
-    <h2 class="pricingPlace_titre">Pricing</h1>
-    <h3 class="pricingPlace_subtitle">Decouvrez tout nos tarifs</h1>
+    <h2 class="pricingPlace_titre">Nos prix</h2>
+    <h3 class="pricingPlace_subtitle">Decouvrez tout nos tarifs</h3>
   </div>
   <div class="flex">
-    {{ pricingCard.show("Gratuit","29,99","Votre écoute","Un audit","10 Projets") }}
-    {{ pricingCard.show("Gratuit","29,99","Votre écoute","Un audit","10 Projets") }}
-    {{ pricingCard.show("Gratuit","29,99","Votre écoute","Un audit","10 Projets") }}
+    {{ pricingCard.show("Découverte","Gratuit","Un accés aux ressources","Des informations inédites","Une newsletter hebdomadaire") }}
+    {{ pricingCard.show("Pro","5,OO par mois","Plan découverte","1h de Coaching","Des infos en avant premières") }}
+    {{ pricingCard.show("Genius","10,00 par mois","Plan pro","3h de coaching","Des invitations aux meetings") }}
   </div>
 </section>
